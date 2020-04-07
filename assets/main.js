@@ -1,3 +1,10 @@
+document.getElementById('issueInputForm').addEventListener('submit', saveIsue);
+
+function saveIssue(e){
+    var issueDesc = 
+}
+
+
 function fetchIssues() {
 
     var issues = JSON.parse(localStorage.getItem('issues'));
@@ -16,4 +23,4 @@ function fetchIssues() {
                                 '<h6>Issues ID: ' + id + '</h6>'+
                                 '<p><span class="label-info">' + status + '<span></p>' + '<h3>' + desc + '</h3>' + '<p><span class="glyphicon glyphicon-time"></span>' + severtity + '</p>' + '<p><span class="glyphicon glyphicon-user"></span>' + asssignedTo + '</p>' + '<a href="#" onclick="setStatusClosed(\''+id+'\')" class="btn btn-warning">Close</a>' + '<a href="#" onclick="deleteIssue(\''+id+'\')" class="btn btn-danger">Delete</a>' + '</div>';
     }
-}
+};
